@@ -5,7 +5,7 @@
 import React, { Component } from 'react';
 import { View, StatusBar } from 'react-native';
 import { Provider } from 'react-redux';
-/* import AppNavigator from './routes'; */
+import AppNavigator from './routes'; 
 import { primaryColor } from './theme';
 import store from './store';
 
@@ -15,7 +15,7 @@ class App extends Component {
       <Provider store={store}>
         <View style={{ flex: 1 }}>
           <StatusBar backgroundColor={primaryColor} barStyle="light-content" />
-          {/* <AppNavigator /> */}
+          <AppNavigator /> 
         </View>
       </Provider>
     );
